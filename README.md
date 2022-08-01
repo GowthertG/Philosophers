@@ -1,4 +1,4 @@
-*Skills* : 
-	Rigor
-	Unix
-	Imperative programming*
+*Skills* : <ul><li/>
+		Rigor<li>
+		Unix<li>
+		Imperative programming*
