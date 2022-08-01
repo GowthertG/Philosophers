@@ -1,5 +1,4 @@
-**Skills :
-
+*Skills :
 	Rigor
 	Unix
 	Imperative programming
