@@ -2,12 +2,11 @@
 	Rigor
 	Unix
 	Imperative programming*
-**RULES
-	```
-	• This project is to be coded in C, following the 42 Norm. Any leak, crash, undefined
+**RULES**
+	
+	```• This project is to be coded in C, following the 42 Norm. Any leak, crash, undefined
 behavior or norm error means 0 to the project.```
-
-• A number of philosophers are sitting at a round table doing one of three things:
+`• A number of philosophers are sitting at a round table doing one of three things:
 eating, thinking or sleeping.
 
 • While eating, they are not thinking or sleeping, while sleeping, they are not eating
@@ -72,5 +71,4 @@ with the philosopher number and timestamp_in_ms the current timestamp in millise
 • You can’t have more than 10 ms between the death of a philosopher and when it
 will print its death.
 
-• Again, philosophers should avoid to die!
-```
+• Again, philosophers should avoid to die!```
