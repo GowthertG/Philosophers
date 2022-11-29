@@ -11,7 +11,7 @@ typedef struct s_list {
     int time_to_eat;
     int time_to_sleep;
     int number_of_times_each_philosopher_must_eat;
-    pthread_t *id;
+    pthread_t id;
     pthread_mutex_t msg;
     pthread_mutex_t *fork;
 } t_list;
@@ -36,5 +36,7 @@ int create_thread(t_philo *philo);
 void *routine(void *philo);
 void start_eating(t_philo *philo);
 void ft_sleep(t_philo *philo);
-
+int	next_fork(t_philo *philo);
+int min (int a, int b);
+int max (int a, int b);
 #endif

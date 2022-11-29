@@ -39,7 +39,6 @@ t_list *init_global(char **args)
 {
   t_list *global;
   global =  malloc(sizeof (t_list));
-  global->id =  malloc (sizeof (pthread_t) * ft_atoi(args[1]));
   global->number_of_philosophers = ft_atoi(args[1]);
   global->time_to_die = ft_atoi(args[2]);
   global->time_to_eat = ft_atoi(args[3]);

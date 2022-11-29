@@ -4,7 +4,6 @@
 
 int main(int argc, char **argv)
 {
-  int index;
   (void)(argc);
   
   t_philo *philo;
@@ -13,7 +12,5 @@ int main(int argc, char **argv)
   philo = init_philosophers(argv);
   create_thread(philo);
 
-  index = 0;
-  while (index <  philo[0].global->number_of_philosophers)
-     pthread_join(philo->global->id[index++], NULL);
+  while (1);
 }
