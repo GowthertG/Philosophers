@@ -4,6 +4,7 @@
 # include <pthread.h>
 # include <stdlib.h>
 # include <unistd.h>
+# include <sys/time.h>
 
 typedef struct s_list {
     int number_of_philosophers;
@@ -11,22 +12,26 @@ typedef struct s_list {
     int time_to_eat;
     int time_to_sleep;
     int number_of_times_each_philosopher_must_eat;
-    pthread_t id;
-    pthread_mutex_t msg;
+    long starter; 
+    pthread_mutex_t *msg;
     pthread_mutex_t *fork;
+
 } t_list;
 
 typedef struct s_pjilo
 {
   int philo_number;
   t_list *global;
+  pthread_t *thread;
 } t_philo;
 
+long get_time(long ms);
 int check_value(char **numbers);
+void ms_sleep(int ms);
 int check_args(char **argv);
 int	ft_atoi(const char *str);
 int error(char *error);
-void printf_lock(t_philo *philo, char *str);
+void printf_lock(t_philo *philo, char *str, long time);
 t_philo *init_philosophers(char **args);
 t_list *init_global(char **args);
 t_philo *init_philosophers(char **args);
