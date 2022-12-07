@@ -1,10 +1,10 @@
 CC = gcc
 
-CFLAGS = -Wall -Wextra -Werror
+CFLAGS = -Wall -Wextra -Werror -fsanitize=thread
 
 NAME = philo
 
-SRC = utils.c ft_atoi.c threads.c
+SRC = utils.c ft_atoi.c threads.c sub_threads.c third_eye.c
 
 OBJS = $(SRC:.c=.o)
 

@@ -6,7 +6,7 @@
 /*   By: hhaddouc <hhaddouc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/05 20:14:18 by hhaddouc          #+#    #+#             */
-/*   Updated: 2022/12/05 20:22:56 by hhaddouc         ###   ########.fr       */
+/*   Updated: 2022/12/06 22:41:24 by hhaddouc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,9 +59,21 @@ t_list	*init_global(char **args)
 	global->fork = malloc ((sizeof (pthread_mutex_t)
 				* global->number_of_philosophers));
 	global->msg = malloc(sizeof(pthread_mutex_t));
+	global->meal = malloc(sizeof(pthread_mutex_t));
+	global->read_leat = malloc(sizeof(pthread_mutex_t));
+	pthread_mutex_init(global->read_leat, NULL);
 	pthread_mutex_init(global->msg, NULL);
+	pthread_mutex_init(global->meal, NULL);
 	if (args[5])
+	{
 		global->number_of_times_each_philosopher_must_eat = ft_atoi(args[5]);
+		global->must_eat = global->number_of_philosophers;
+	}
+	else
+	{
+		global->number_of_times_each_philosopher_must_eat = UNUSED;
+    global->must_eat = UNUSED;
+	}
 	return (global);
 }
 
@@ -81,6 +93,7 @@ t_philo	*init_philosophers(char **args)
 	index = 0;
 	while (index < ft_atoi(args[1]))
 	{
+		tmp[index].meals = 0;
 		tmp[index].philo_number = index + 1;
 		tmp[index].global = global_tmp;
 		tmp[index].thread = malloc(sizeof(pthread_t));
