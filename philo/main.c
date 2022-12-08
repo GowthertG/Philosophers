@@ -17,9 +17,13 @@ int	main(int argc, char **argv)
 	t_philo	*philo;
 
 	(void)(argc);
+  if (argc == 5 || argc == 6)
+  {
 	if (check_args(argv) || check_value(argv))
 		return (error ("invalid argument"));
 	philo = init_philosophers(argv);
   create_thread(philo);
 	return (third_eye(philo));
+  }
+  return (error("invalid number of arguments"));
 }
