@@ -8,7 +8,7 @@ int start_eating(t_philo *philo)
   c_fork = ((t_philo *)(philo))->philo_number - 1;
   next_fork = ((t_philo *)(philo))->philo_number % 5;
 
-
+return (1);
 }
 void *routine (void *philo)
 {
@@ -47,12 +47,13 @@ int	main(int argc, char **argv)
 	t_philo	*philo;
 
 	(void)(argc);
+  printf ("argc = %d\n", argc);
   if (argc == 5 || argc == 6)
   {
-	if (check_args(argv) || check_value(argv))
-		return (error ("invalid argument"));
-	philo = init_philosophers(argv);
-  create_philosophers(philo);
+	  if (check_args(argv) )
+	  	return (error ("invalid argument"));
+	  philo = init_philosophers(argv);
+     create_philosophers(philo);
   /*
   create_thread(philo);
 	return (third_eye(philo));

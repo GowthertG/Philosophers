@@ -29,6 +29,7 @@ int	third_eye(t_philo *philosophers)
 		}
 		index = 0;
 	}
+	printf("bruuuh\n");
 }
 
 int	check_meals(t_philo *philo)

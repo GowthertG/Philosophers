@@ -17,8 +17,9 @@ void	ms_sleep(int ms)
 	long	count;
 
 	count = get_time(0);
-	while (get_time(count) < ms)
-		usleep(300);
+	while (get_time(count) < ms) // v_time < ms 
+		usleep(300); // v_time = get
+			//usleep(10);
 }
 
 long	get_time(long ms)

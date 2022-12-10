@@ -29,7 +29,7 @@ void	start_eating(t_philo *philo)
 		get_time(philo->global->starter));
 	ms_sleep(philo->global->time_to_eat);
 	pthread_mutex_lock(philo->global->read_leat);
-	philo->last_eat = get_time(0);
+	philo->last_eat = get_time(philo->global->starter);
 	pthread_mutex_unlock(philo->global->read_leat);
 	if (philo->global->number_of_times_each_philosopher_must_eat != UNUSED)
 		philo->meals++;

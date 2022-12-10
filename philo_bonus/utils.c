@@ -31,9 +31,12 @@ int	check_args(char **argv)
 		while (argv[index][j])
 		{
 			if (argv[index][j] >= '0' && argv[index][j] <= '9')
-			j++;
+				j++;
 			else
+			{
+				printf ("argv[%d][%d] = %c\n", index, j, argv[index][j]);
 				return (1);
+			}
 		}
 				index++;
 	}

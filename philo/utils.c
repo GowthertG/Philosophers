@@ -97,6 +97,7 @@ t_philo	*init_philosophers(char **args)
 		tmp[index].philo_number = index + 1;
 		tmp[index].global = global_tmp;
 		tmp[index].thread = malloc(sizeof(pthread_t));
+		tmp[index].last_eat = 0;
 		pthread_mutex_init(&tmp->global->fork[index], NULL);
 		index++;
 	}
