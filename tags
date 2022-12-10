@@ -1,0 +1,108 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_EXCMD	mixed	/number, pattern, mixed, or combineV2/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
+!_TAG_PROC_CWD	/home/houssam/philosophers/	//
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	5.9.0	/83c1a093/
+$(NAME)	philo/Makefile	/^$(NAME) : $(OBJS)$/;"	t
+$(NAME)	philo_bonus/Makefile	/^$(NAME) : $(OBJS)$/;"	t
+CC	philo/Makefile	/^CC = gcc$/;"	m
+CC	philo_bonus/Makefile	/^CC = gcc$/;"	m
+CFLAGS	philo/Makefile	/^CFLAGS = -Wall -Wextra -Werror -fsanitize=thread$/;"	m
+CFLAGS	philo_bonus/Makefile	/^CFLAGS = -Wall -Wextra -Werror #-fsanitize=thread$/;"	m
+C_Cpp.errorSquiggles	philo/.vscode/settings.json	/^    "C_Cpp.errorSquiggles": "Disabled"$/;"	s
+Dining Philosphers problem	README.md	/^# Dining Philosphers problem$/;"	c
+FALSE	philo/philo.h	/^# define FALSE /;"	d
+FALSE	philo_bonus/philo.h	/^# define FALSE /;"	d
+FULL	philo/philo.h	/^# define FULL /;"	d
+FULL	philo_bonus/philo.h	/^# define FULL /;"	d
+NAME	philo/Makefile	/^NAME = philo$/;"	m
+NAME	philo_bonus/Makefile	/^NAME = philo$/;"	m
+OBJS	philo/Makefile	/^OBJS = $(SRC:.c=.o)$/;"	m
+OBJS	philo_bonus/Makefile	/^OBJS = $(SRC:.c=.o)$/;"	m
+PHILO_H	philo/philo.h	/^# define PHILO_H$/;"	d
+PHILO_H	philo_bonus/philo.h	/^# define PHILO_H$/;"	d
+SRC	philo/Makefile	/^SRC = utils.c ft_atoi.c threads.c sub_threads.c third_eye.c$/;"	m
+SRC	philo_bonus/Makefile	/^SRC = utils.c ft_atoi.c$/;"	m
+UNUSED	philo/philo.h	/^# define UNUSED /;"	d
+UNUSED	philo_bonus/philo.h	/^# define UNUSED /;"	d
+all	philo/Makefile	/^all : $(NAME)$/;"	t
+all	philo_bonus/Makefile	/^all : $(NAME)$/;"	t
+check_args	philo/utils.c	/^int	check_args(char **argv)$/;"	f	typeref:typename:int
+check_args	philo_bonus/utils.c	/^int	check_args(char **argv)$/;"	f	typeref:typename:int
+check_meals	philo/third_eye.c	/^int	check_meals(t_philo *philo)$/;"	f	typeref:typename:int
+check_value	philo/utils.c	/^int	check_value(char **numbers)$/;"	f	typeref:typename:int
+check_value	philo_bonus/utils.c	/^int	check_value(char **numbers)$/;"	f	typeref:typename:int
+clean	philo/Makefile	/^clean : $/;"	t
+clean	philo_bonus/Makefile	/^clean : $/;"	t
+create_philosophers	philo_bonus/main.c	/^int create_philosophers(t_philo *philo)$/;"	f	typeref:typename:int
+create_thread	philo/sub_threads.c	/^int	create_thread(t_philo *philo)$/;"	f	typeref:typename:int
+error	philo/utils.c	/^int	error(char *error)$/;"	f	typeref:typename:int
+error	philo_bonus/utils.c	/^int	error(char *error)$/;"	f	typeref:typename:int
+fclean	philo/Makefile	/^fclean : clean$/;"	t
+fclean	philo_bonus/Makefile	/^fclean : clean$/;"	t
+files.associations	philo/.vscode/settings.json	/^    "files.associations": {$/;"	o
+fork	philo/philo.h	/^	pthread_mutex_t	*fork;$/;"	m	struct:s_list	typeref:typename:pthread_mutex_t *
+ft_atoi	philo/ft_atoi.c	/^int	ft_atoi(const char *str)$/;"	f	typeref:typename:int
+ft_atoi	philo_bonus/ft_atoi.c	/^int	ft_atoi(const char *str)$/;"	f	typeref:typename:int
+ft_sleep	philo/sub_threads.c	/^void	ft_sleep(t_philo *philo)$/;"	f	typeref:typename:void
+get_time	philo/threads.c	/^long	get_time(long ms)$/;"	f	typeref:typename:long
+global	philo/philo.h	/^	t_list		*global;$/;"	m	struct:s_philo	typeref:typename:t_list *
+global	philo_bonus/philo.h	/^  t_list    *global;$/;"	m	struct:s_philo	typeref:typename:t_list *
+init_global	philo/utils.c	/^t_list	*init_global(char **args)$/;"	f	typeref:typename:t_list *
+init_global	philo_bonus/utils.c	/^t_list	*init_global(char **args)$/;"	f	typeref:typename:t_list *
+init_philosophers	philo/utils.c	/^t_philo	*init_philosophers(char **args)$/;"	f	typeref:typename:t_philo *
+init_philosophers	philo_bonus/utils.c	/^t_philo	*init_philosophers(char **args)$/;"	f	typeref:typename:t_philo *
+last_eat	philo/philo.h	/^	long		last_eat;$/;"	m	struct:s_philo	typeref:typename:long
+last_eat	philo_bonus/philo.h	/^  long    last_eat;$/;"	m	struct:s_philo	typeref:typename:long
+main	philo/main.c	/^int	main(int argc, char **argv)$/;"	f	typeref:typename:int
+main	philo_bonus/main.c	/^int	main(int argc, char **argv)$/;"	f	typeref:typename:int
+meal	philo/philo.h	/^	pthread_mutex_t	*meal;$/;"	m	struct:s_list	typeref:typename:pthread_mutex_t *
+meals	philo/philo.h	/^	long		meals;$/;"	m	struct:s_philo	typeref:typename:long
+meals	philo_bonus/philo.h	/^  long    meals;$/;"	m	struct:s_philo	typeref:typename:long
+min	philo/third_eye.c	/^int	min(int a, int b)$/;"	f	typeref:typename:int
+ms_sleep	philo/threads.c	/^void	ms_sleep(int ms)$/;"	f	typeref:typename:void
+msg	philo/philo.h	/^	pthread_mutex_t	*msg;$/;"	m	struct:s_list	typeref:typename:pthread_mutex_t *
+must_eat	philo/philo.h	/^	int				must_eat;$/;"	m	struct:s_list	typeref:typename:int
+must_eat	philo_bonus/philo.h	/^  int       must_eat;$/;"	m	struct:s_list	typeref:typename:int
+next_fork	philo/threads.c	/^int	next_fork(t_philo *philo)$/;"	f	typeref:typename:int
+number_of_philosophers	philo/philo.h	/^	int				number_of_philosophers;$/;"	m	struct:s_list	typeref:typename:int
+number_of_philosophers	philo_bonus/philo.h	/^  int       number_of_philosophers;$/;"	m	struct:s_list	typeref:typename:int
+number_of_times_each_philosopher_must_eat	philo/philo.h	/^	int				number_of_times_each_philosopher_must_eat;$/;"	m	struct:s_list	typeref:typename:int
+number_of_times_each_philosopher_must_eat	philo_bonus/philo.h	/^  int       number_of_times_each_philosopher_must_eat;$/;"	m	struct:s_list	typeref:typename:int
+philo.h	philo/.vscode/settings.json	/^        "philo.h": "c"$/;"	s	object:files.associations
+philo_number	philo/philo.h	/^	int			philo_number;$/;"	m	struct:s_philo	typeref:typename:int
+philo_number	philo_bonus/philo.h	/^  int     philo_number;$/;"	m	struct:s_philo	typeref:typename:int
+printf_lock	philo/threads.c	/^void	printf_lock(t_philo *philo, char *str, long time)$/;"	f	typeref:typename:void
+re	philo/Makefile	/^re : fclean all$/;"	t
+re	philo_bonus/Makefile	/^re : fclean all$/;"	t
+read_leat	philo/philo.h	/^	pthread_mutex_t	*read_leat;$/;"	m	struct:s_list	typeref:typename:pthread_mutex_t *
+routine	philo/sub_threads.c	/^void	*routine(void *philo)$/;"	f	typeref:typename:void *
+routine	philo_bonus/main.c	/^void *routine (void *philo)$/;"	f	typeref:typename:void *
+s_list	philo/philo.h	/^typedef struct s_list {$/;"	s
+s_list	philo_bonus/philo.h	/^typedef struct s_list {$/;"	s
+s_philo	philo/philo.h	/^typedef struct s_philo$/;"	s
+s_philo	philo_bonus/philo.h	/^typedef struct s_philo$/;"	s
+start_eating	philo/sub_threads.c	/^void	start_eating(t_philo *philo)$/;"	f	typeref:typename:void
+start_eating	philo_bonus/main.c	/^int start_eating(t_philo *philo)$/;"	f	typeref:typename:int
+start_routine	philo_bonus/main.c	/^int start_routine (t_philo *philo)$/;"	f	typeref:typename:int
+starter	philo/philo.h	/^	long			starter;$/;"	m	struct:s_list	typeref:typename:long
+starter	philo_bonus/philo.h	/^  long      starter;$/;"	m	struct:s_list	typeref:typename:long
+t_list	philo/philo.h	/^}	t_list;$/;"	t	typeref:struct:s_list
+t_list	philo_bonus/philo.h	/^} t_list;$/;"	t	typeref:struct:s_list
+t_philo	philo/philo.h	/^}	t_philo;$/;"	t	typeref:struct:s_philo
+t_philo	philo_bonus/philo.h	/^} t_philo;$/;"	t	typeref:struct:s_philo
+third_eye	philo/third_eye.c	/^int	third_eye(t_philo *philosophers)$/;"	f	typeref:typename:int
+thread	philo/philo.h	/^	pthread_t	*thread;$/;"	m	struct:s_philo	typeref:typename:pthread_t *
+thread	philo_bonus/philo.h	/^  pthread_t *thread;$/;"	m	struct:s_philo	typeref:typename:pthread_t *
+time_to_die	philo/philo.h	/^	int				time_to_die;$/;"	m	struct:s_list	typeref:typename:int
+time_to_die	philo_bonus/philo.h	/^  int       time_to_die;$/;"	m	struct:s_list	typeref:typename:int
+time_to_eat	philo/philo.h	/^	int				time_to_eat;$/;"	m	struct:s_list	typeref:typename:int
+time_to_eat	philo_bonus/philo.h	/^  int       time_to_eat;$/;"	m	struct:s_list	typeref:typename:int
+time_to_sleep	philo/philo.h	/^	int				time_to_sleep;$/;"	m	struct:s_list	typeref:typename:int
+time_to_sleep	philo_bonus/philo.h	/^  int       time_to_sleep;$/;"	m	struct:s_list	typeref:typename:int
